@@ -13,7 +13,7 @@ function checkBirthDateIsLucky() {
         let sum = calculateSum(date);
       
         if(sum % numberToCheck === 0)
-        return showMessage("Your Birthday is Lucky🥳 🥳 🥳");
+        return showMessage("Your Birthday is Lucky 🥳 🥳");
         else
         showMessage("Your Birthday is not that lucky 😕");
       }
