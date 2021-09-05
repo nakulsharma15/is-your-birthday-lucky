@@ -9,7 +9,11 @@ function checkBirthDateIsLucky() {
 
     const date = dateOfBirth.value;
     let numberToCheck = luckyNumber.value;
-    if (date && numberToCheck) {
+
+    if(numberToCheck <= 0) {
+        showMessage("Please enter values greater than 0!")
+    }
+    else if (date && numberToCheck) {
         let sum = calculateSum(date);
       
         if(sum % numberToCheck === 0)
